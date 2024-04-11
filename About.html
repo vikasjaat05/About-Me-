@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: 'Lato', sans-serif;
+    }
+
+    .overlay {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: rgb(0, 0, 0);
+      background-color: rgba(0, 0, 0, 0.9);
+      overflow-x: hidden;
+      transition: 0.5s;
+    }
+
+
+
+    .overlay-content {
+      position: relative;
+      top: 25%;
+      width: 100%;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .overlay a {
+      padding: 8px;
+      text-decoration: none;
+      font-size: 36px;
+      color: #fbfafa;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .overlay a:hover,
+    .overlay a:focus {
+      color: #f1f1f1;
+    }
+
+    .overlay .closebtn {
+      position: absolute;
+      top: 20px;
+      right: 45px;
+      font-size: 60px;
+    }
+
+    @media screen and (max-height: 450px) {
+      .overlay a {
+        font-size: 20px
+      }
+
+      .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+      }
+    }
+
+    .parallax {
+      /* The image used */
+      background-image: url("./img/2.jpg");
+      background-size: 200px;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+
+
+
+
+      /* Set a specific height */
+      min-height: 500px;
+
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    
+  </style>
+</head>
+
+<body>
+
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="index.html">Home</a>
+      <a href="About.html">About</a>
+      <a href="Services.html">Services</a>
+      <a href="Contact.html">Contact</a>
+    </div>
+  </div>
+  <span style="font-size:30px;cursor:pointer ; color: rgb(224, 184, 64);" onclick="openNav()">&#9776; Home</span>
+
+  <!-- <div class="parallax"></div> -->
+
+
+
+  <!-- <p>Scroll Up and Down this page to see the parallax scrolling effect.</p> -->
+
+  <div class="parallax"></div>
+
+  
+
+  <div style="height: 600px;background-color:rgba(218, 207, 207, 0.925);">
+    <h2 style="text-align: center;">About me</h2>
+    <p style="text-align: center; font-size: 20px; word-break: break-all; line-height: 40px;width: 80%; height: 200px;margin-left: 10%; font-family: 'Times New Roman', Times, serif;">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptas sint, dolorum numquam facere deleniti quod
+    eos, error quibusdam quos ratione. Modi eveniet omnis culpa commodi eum exercitationem eaque, at ex aliquam iste
+    asperiores ipsa praesentium laborum quas, voluptates consectetur dignissimos. Ipsa totam placeat sequi nam officia
+    velit, aperiam blanditiis voluptatibus. Tempora ea eum id nulla rem illo assumenda saepe ullam modi, ratione quod
+    odit necessitatibus maxime officiis, sapiente sunt eaque nostrum ut animi. Beatae quia cumque aut maxime earum
+    soluta, deleniti dolorem in fugiat deserunt fugit sit a libero aliquid reprehenderit iusto placeat praesentium
+    provident error sint facilis? Nisi, provident! Labore sunt dicta neque eum, blanditiis illum nemo deserunt
+    praesentium, dolore, eos molestias molestiae architecto quo quam ipsa odio. Expedita ex optio temporibus vero,
+    animi, repellat explicabo dolorem odio, voluptates aliquid provident! Quos laudantium fuga vel accusantium sint sit
+    dolorum minus culpa, dignissimos, sunt quaerat. Dolore aspernatur excepturi, quae totam eveniet fugit ipsum.
+    Nesciunt molestias alias voluptatum sint consequatur nobis, reiciendis iste possimus natus distinctio et doloremque,
+    officia dolore laudantium at ducimus aut dolor accusantium libero praesentium labore, nemo quaerat qui? Asperiores
+    modi natus neque! Temporibus voluptatem culpa veritatis alias nemo accusantium minima a repudiandae dicta, ullam
+    quas sequi. lorem100</p>
+  </div>
+
+
+
+
+
+  <div class="parallax"></div>
+
+  <div style="height: 600px;background-color:rgba(225, 216, 216, 0.925);">
+    <!-- <h2 style="text-align: center;">About me</h2> -->
+    <p style="text-align: center; font-size: 20px; word-break: break-all; line-height: 40px;width: 80%; height: 200px;margin-left: 10%; font-family: 'Times New Roman', Times, serif;">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptas sint, dolorum numquam facere deleniti quod
+    eos, error quibusdam quos ratione. Modi eveniet omnis culpa commodi eum exercitationem eaque, at ex aliquam iste
+    asperiores ipsa praesentium laborum quas, voluptates consectetur dignissimos. Ipsa totam placeat sequi nam officia
+    velit, aperiam blanditiis voluptatibus. Tempora ea eum id nulla rem illo assumenda saepe ullam modi, ratione quod
+    odit necessitatibus maxime officiis, sapiente sunt eaque nostrum ut animi. Beatae quia cumque aut maxime earum
+    soluta, deleniti dolorem in fugiat deserunt fugit sit a libero aliquid reprehenderit iusto placeat praesentium
+    provident error sint facilis? Nisi, provident! Labore sunt dicta neque eum, blanditiis illum nemo deserunt
+    praesentium, dolore, eos molestias molestiae architecto quo quam ipsa odio. Expedita ex optio temporibus vero,
+    animi, repellat explicabo dolorem odio, voluptates aliquid provident! Quos laudantium fuga vel accusantium sint sit
+    dolorum minus culpa, dignissimos, sunt quaerat. Dolore aspernatur excepturi, quae totam eveniet fugit ipsum.
+    Nesciunt molestias alias voluptatum sint consequatur nobis, reiciendis iste possimus natus distinctio et doloremque,
+    officia dolore laudantium at ducimus aut dolor accusantium libero praesentium labore, nemo quaerat qui? Asperiores
+    modi natus neque! Temporibus voluptatem culpa veritatis alias nemo accusantium minima a repudiandae dicta, ullam
+    quas sequi. lorem100</p>
+  </div>
+
+  
+  <div class="parallax"></div>
+
+  <div style="height: 600px;background-color:rgba(225, 216, 216, 0.925);">
+    <!-- <h2 style="text-align: center;">About me</h2> -->
+    <p style="text-align: center; font-size: 20px; word-break: break-all; line-height: 40px;width: 80%; height: 200px;margin-left: 10%; font-family: 'Times New Roman', Times, serif;">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptas sint, dolorum numquam facere deleniti quod
+    eos, error quibusdam quos ratione. Modi eveniet omnis culpa commodi eum exercitationem eaque, at ex aliquam iste
+    asperiores ipsa praesentium laborum quas, voluptates consectetur dignissimos. Ipsa totam placeat sequi nam officia
+    velit, aperiam blanditiis voluptatibus. Tempora ea eum id nulla rem illo assumenda saepe ullam modi, ratione quod
+    odit necessitatibus maxime officiis, sapiente sunt eaque nostrum ut animi. Beatae quia cumque aut maxime earum
+    soluta, deleniti dolorem in fugiat deserunt fugit sit a libero aliquid reprehenderit iusto placeat praesentium
+    provident error sint facilis? Nisi, provident! Labore sunt dicta neque eum, blanditiis illum nemo deserunt
+    praesentium, dolore, eos molestias molestiae architecto quo quam ipsa odio. Expedita ex optio temporibus vero,
+    animi, repellat explicabo dolorem odio, voluptates aliquid provident! Quos laudantium fuga vel accusantium sint sit
+    dolorum minus culpa, dignissimos, sunt quaerat. Dolore aspernatur excepturi, quae totam eveniet fugit ipsum.
+    Nesciunt molestias alias voluptatum sint consequatur nobis, reiciendis iste possimus natus distinctio et doloremque,
+    officia dolore laudantium at ducimus aut dolor accusantium libero praesentium labore, nemo quaerat qui? Asperiores
+    modi natus neque! Temporibus voluptatem culpa veritatis alias nemo accusantium minima a repudiandae dicta, ullam
+    quas sequi. lorem100</p>
+  </div>
+
+
+
+
+
+  <div class="parallax"></div>
+
+  <div style="height: 600px;background-color:rgba(225, 216, 216, 0.925);">
+    <!-- <h2 style="text-align: center;">About me</h2> -->
+    <p style="text-align: center; font-size: 20px; word-break: break-all; line-height: 40px;width: 80%; height: 200px;margin-left: 10%; font-family: 'Times New Roman', Times, serif;">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptas sint, dolorum numquam facere deleniti quod
+    eos, error quibusdam quos ratione. Modi eveniet omnis culpa commodi eum exercitationem eaque, at ex aliquam iste
+    asperiores ipsa praesentium laborum quas, voluptates consectetur dignissimos. Ipsa totam placeat sequi nam officia
+    velit, aperiam blanditiis voluptatibus. Tempora ea eum id nulla rem illo assumenda saepe ullam modi, ratione quod
+    odit necessitatibus maxime officiis, sapiente sunt eaque nostrum ut animi. Beatae quia cumque aut maxime earum
+    soluta, deleniti dolorem in fugiat deserunt fugit sit a libero aliquid reprehenderit iusto placeat praesentium
+    provident error sint facilis? Nisi, provident! Labore sunt dicta neque eum, blanditiis illum nemo deserunt
+    praesentium, dolore, eos molestias molestiae architecto quo quam ipsa odio. Expedita ex optio temporibus vero,
+    animi, repellat explicabo dolorem odio, voluptates aliquid provident! Quos laudantium fuga vel accusantium sint sit
+    dolorum minus culpa, dignissimos, sunt quaerat. Dolore aspernatur excepturi, quae totam eveniet fugit ipsum.
+    Nesciunt molestias alias voluptatum sint consequatur nobis, reiciendis iste possimus natus distinctio et doloremque,
+    officia dolore laudantium at ducimus aut dolor accusantium libero praesentium labore, nemo quaerat qui? Asperiores
+    modi natus neque! Temporibus voluptatem culpa veritatis alias nemo accusantium minima a repudiandae dicta, ullam
+    quas sequi. lorem100</p>
+  </div>
+
+  
+  <div class="parallax"></div>
+
+  <div style="height: 600px;background-color:rgba(225, 216, 216, 0.925);">
+    <!-- <h2 style="text-align: center;">About me</h2> -->
+    <p style="text-align: center; font-size: 20px; word-break: break-all; line-height: 40px;width: 80%; height: 200px;margin-left: 10%; font-family: 'Times New Roman', Times, serif;">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptas sint, dolorum numquam facere deleniti quod
+    eos, error quibusdam quos ratione. Modi eveniet omnis culpa commodi eum exercitationem eaque, at ex aliquam iste
+    asperiores ipsa praesentium laborum quas, voluptates consectetur dignissimos. Ipsa totam placeat sequi nam officia
+    velit, aperiam blanditiis voluptatibus. Tempora ea eum id nulla rem illo assumenda saepe ullam modi, ratione quod
+    odit necessitatibus maxime officiis, sapiente sunt eaque nostrum ut animi. Beatae quia cumque aut maxime earum
+    soluta, deleniti dolorem in fugiat deserunt fugit sit a libero aliquid reprehenderit iusto placeat praesentium
+    provident error sint facilis? Nisi, provident! Labore sunt dicta neque eum, blanditiis illum nemo deserunt
+    praesentium, dolore, eos molestias molestiae architecto quo quam ipsa odio. Expedita ex optio temporibus vero,
+    animi, repellat explicabo dolorem odio, voluptates aliquid provident! Quos laudantium fuga vel accusantium sint sit
+    dolorum minus culpa, dignissimos, sunt quaerat. Dolore aspernatur excepturi, quae totam eveniet fugit ipsum.
+    Nesciunt molestias alias voluptatum sint consequatur nobis, reiciendis iste possimus natus distinctio et doloremque,
+    officia dolore laudantium at ducimus aut dolor accusantium libero praesentium labore, nemo quaerat qui? Asperiores
+    modi natus neque! Temporibus voluptatem culpa veritatis alias nemo accusantium minima a repudiandae dicta, ullam
+    quas sequi. lorem100</p>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+  </script>
+
+</body>
+
+</html>
